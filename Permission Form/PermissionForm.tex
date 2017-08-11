@@ -1,0 +1,47 @@
+\documentclass{article} 
+
+\usepackage[top=5mm, bottom=5mm, left=5mm, right=5mm]{geometry}
+\usepackage{framed}
+\usepackage{multirow}
+
+\setlength{\FrameSep}{5pt}
+\setlength{\OuterFrameSep}{1mm}
+
+\newcommand{\rulethickness}{1pt}
+\newcommand{\signspace}{1cm}
+
+\frenchspacing
+
+\newcommand{\form}%
+	{%
+		\begin{framed}
+			\centering
+			\textbf{\Large William Lyon Mackenzie C\@.I\@. Math Contest Permission Form}
+
+			\vspace{\signspace}
+			\begin{tabular}{cc}
+				\rule{0.55\textwidth}{\rulethickness} & \rule{0.35\textwidth}{\rulethickness}\\
+				Contest Name & Date (YYYY-MM-DD)
+			\end{tabular}
+
+			\vspace{\signspace}
+			\begin{tabular}{cc}
+				\rule{0.45\textwidth}{\rulethickness} & \rule{0.45\textwidth}{\rulethickness}\\
+				Period 1 Teacher Signature & Period 2 Teacher Signature (If Required)
+			\end{tabular}
+
+			\vspace{\signspace}
+			\begin{tabular}{cc}
+				\rule{0.55\textwidth}{\rulethickness} & \multirow{2}{0.35\textwidth}{\centering\textit{Please remember that if you do not show up for the contest you may be penalized.}} \\
+				Student Name
+			\end{tabular}
+		\end{framed}
+	}
+
+\begin{document}
+	\pagenumbering{gobble}
+	\form
+	\form
+	\form
+	\form
+\end{document}
