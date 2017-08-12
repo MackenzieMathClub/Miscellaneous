@@ -1,11 +1,10 @@
-\documentclass{article} 
+\documentclass[twocolumn]{article} 
 
-\usepackage[top=5mm, bottom=5mm, left=5mm, right=5mm]{geometry}
+\usepackage[top=0mm, bottom=0mm, left=5mm, right=5mm]{geometry}
 \usepackage{framed}
 \usepackage{multirow}
 
-\setlength{\FrameSep}{5pt}
-\setlength{\OuterFrameSep}{1mm}
+\setlength{\OuterFrameSep}{10pt}
 
 \newcommand{\rulethickness}{1pt}
 \newcommand{\signspace}{1cm}
@@ -21,13 +20,13 @@
 			\vspace{\signspace}
 			\begin{tabular}{cc}
 				\rule{0.55\textwidth}{\rulethickness} & \rule{0.35\textwidth}{\rulethickness}\\
-				Contest Name & Date (YYYY-MM-DD)
+				Contest Name & \parbox{3cm}{\centering Date (YYYY-MM-DD)}
 			\end{tabular}
 
 			\vspace{\signspace}
 			\begin{tabular}{cc}
 				\rule{0.45\textwidth}{\rulethickness} & \rule{0.45\textwidth}{\rulethickness}\\
-				Period 1 Teacher Signature & Period 2 Teacher Signature (If Required)
+				Period 1 Teacher Signature & \parbox{5cm}{\centering Period 2 Teacher Signature\\(If Required)}
 			\end{tabular}
 
 			\vspace{\signspace}
@@ -35,13 +34,23 @@
 				\rule{0.55\textwidth}{\rulethickness} & \multirow{2}{0.35\textwidth}{\centering\textit{Please remember that if you do not show up for the contest you may be penalized.}} \\
 				Student Name
 			\end{tabular}
+			\vspace{1.25\baselineskip}
 		\end{framed}
 	}
 
 \begin{document}
 	\pagenumbering{gobble}
+	\topskip0pt
+
+	\vspace*{\fill}
 	\form
 	\form
 	\form
+	\vspace*{\fill}
+	\newpage
+	\vspace*{\fill}
 	\form
+	\form
+	\form
+	\vspace*{\fill}
 \end{document}
